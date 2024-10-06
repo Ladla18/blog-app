@@ -47,13 +47,16 @@ const DeviceForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/devices", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(device)
-      });
+      const response = await fetch(
+        "https://blog-backend-27u2.onrender.com/devices",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(device),
+        }
+      );
       const data = await response.json();
       console.log(data);
       navigate("/");

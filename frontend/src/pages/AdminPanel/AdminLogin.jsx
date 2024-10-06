@@ -16,7 +16,10 @@ export default function App() {
 
   const onSubmit = async (data) => {
    try{
-    const response = await axios.post("http://localhost:5000/adminlogin",data);
+    const response = await axios.post(
+      "https://blog-backend-27u2.onrender.com/adminlogin",
+      data
+    );
     if(response.data.message == "success"){
       navigate("/admin");
     }else{

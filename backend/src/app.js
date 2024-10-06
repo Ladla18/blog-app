@@ -3,13 +3,16 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser= require("body-parser")
 const Device = require("./models/deviceSchema")
-const cors = require("cors")
+const cors = require("cors");
+const Admin = require("./models/adminSchema");
 main().then(()=>{
     console.log("Mongo db connected")
 }).catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/blog');
+  await mongoose.connect(
+    "mongodb+srv://ecom:amanladla@cluster0.en3tt.mongodb.net/blog-app"
+  );
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
@@ -25,6 +28,16 @@ app.post('/devices', async (req, res) => {
       res.status(400).json({ message: err.message });
     }
   });
+
+app.post("/adminlogin",async(req,res)=>{
+  const {username,password} = req.body;
+  const adminDetail = await Admin.findOne({username : username});
+  if(adminDetail && adminDetail.password === password){
+    res.status(200).json({message:"success"})
+    }else{
+      res.status(401).json({message:"Invalid username or password"})
+    }
+})  
 
 
 

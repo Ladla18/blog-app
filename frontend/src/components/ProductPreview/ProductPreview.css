@@ -1,0 +1,16 @@
+.product-Image{
+    display: flex;
+    justify-content: center;
+    background-color: #ebe8e8;
+}
+.date-detail{
+    margin-top: 20px;
+}
+.product-Image img{
+    width: 500px;
+}
+@media (max-width: 600px){
+    .product-Image img{
+        width: 150px;
+    }
+}

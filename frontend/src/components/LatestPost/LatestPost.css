@@ -1,0 +1,16 @@
+.latest-post{
+    display: flex;
+}
+
+.latest-post-img{
+   width: 60px;
+   height: 60px;
+}
+.latest-post-img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.latest-post-date{
+    font-size: 12px;
+}

@@ -20,7 +20,7 @@ function Home() {
           <div className="row">
             <div className="col-6 col-lg-12">
               <ProductPreview
-                image="public/images/two.jpeg"
+                image="images/two.jpeg"
                 title="New Transparent Smartphone in Market"
                 date="2023-11-22"
                 category="Smartphone-Gadgets"
@@ -29,7 +29,7 @@ function Home() {
             </div>
             <div className="col-6 col-lg-12">
               <ProductPreview
-                image="public/images/three.jpg"
+                image="images/three.jpg"
                 title="New Transparent Smartphone in Market"
                 date="2023-11-22"
                 category="Smartphone-Gadgets"
@@ -38,7 +38,7 @@ function Home() {
             </div>
             <div className="col-6 col-lg-12">
               <ProductPreview
-                image="public/images/one.jpg"
+                image="images/one.jpg"
                 title="New Transparent Smartphone in Market"
                 date="2023-11-22"
                 category="Smartphone-Gadgets"

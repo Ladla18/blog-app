@@ -18,10 +18,10 @@ function RightPart({postTags}) {
           </div>
           <div className='mt-3 mx-4'>
             <h4>Latest Updates</h4>
-            <LatestPost image="public/images/three.jpg" info="This is the new Era of technlogy This is the new Era of technlogy" date="10-02-2003" />
-            <LatestPost image="public/images/one.jpg" info="This is the new Era of technlogy" date="10-02-2003" />
-            <LatestPost image="public/images/two.jpeg" info="This is the new Era of technlogy" date="10-02-2003" />
-            <LatestPost image="public/images/four.jpg" info="This is the new Era of technlogy" date="10-02-2003" />
+            <LatestPost image="images/three.jpg" info="This is the new Era of technlogy This is the new Era of technlogy" date="10-02-2003" />
+            <LatestPost image="images/one.jpg" info="This is the new Era of technlogy" date="10-02-2003" />
+            <LatestPost image="images/two.jpeg" info="This is the new Era of technlogy" date="10-02-2003" />
+            <LatestPost image="images/four.jpg" info="This is the new Era of technlogy" date="10-02-2003" />
           </div>
 
           <div className='mt-4 mx-4'>
